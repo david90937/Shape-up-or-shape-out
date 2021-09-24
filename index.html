@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="btn btn-primary" id="rectangle-btn">Rectangle</button>
+    <input type="text" id="rectangle-height">
+    <input type="text" id="rectangle-width">
+    <button class="btn btn-primary" id="triangle-btn">Triangle</button>
+    <input type="text" id="triangle-height">
+    <button class="btn btn-primary" id="circle-btn">Circle</button>
+    <input type="text" id="circle-radius">
+    <button class="btn btn-primary" id="square-btn">Square</button>
+    <input type="text" id="square-side">
+    <div class="container">
+        <div class="row">
+            <div class="shape-container col-6"></div>
+            <div class="sidepanel row justify-content-evenly col-3">
+                <div class="shape-name panel-item"></div>
+                <div class="shape-width panel-item"></div>
+                <div class="shape-height panel-item"></div>
+                <div class="shape-radius panel-item"></div>
+                <div class="shape-area panel-item"></div>
+                <div class="shape-perimeter panel-item"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

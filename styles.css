@@ -1,0 +1,40 @@
+.shape-container {
+    height: 600px;
+    width: 600px;
+    background-color: teal;
+}
+.sidepanel {
+    height: 600px;
+    width: 300px;
+    background-color: thistle;
+    margin-left: 10em;
+    padding: 3em;
+}
+
+.shape {
+    position: absolute;
+}
+
+.square {
+    background: red;;
+  }
+
+.rectangle {
+    background: red;
+  }
+
+.circle {
+    background: purple;
+    border-radius: 50%
+  }
+
+.triangle-isosceles {
+    border-bottom: 100px solid red;
+    border-right: 100px solid transparent;
+  }
+
+.panel-item{
+    background-color: white;
+    height: 2em;
+    margin-top: 1.25em;
+}
