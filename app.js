@@ -8,6 +8,13 @@ let userInputTriangle = document.getElementById('triangle-height')
 let userInputRectangleHeight = document.getElementById('rectangle-height');
 let userInputRectangleWidth = document.getElementById('rectangle-width');
 let userInputSquare = document.getElementById('square-side');
+let shapeName = document.querySelector('.shape-name');
+let shapeWidth = document.querySelector('.shape-width');
+let shapeHeight = document.querySelector('.shape-height');
+let shapeRadius = document.querySelector('.shape-radius');
+let shapeArea = document.querySelector('.shape-area');
+let shapePerimeter = document.querySelector('.shape-perimeter');
+
 // let circleRadius = userInputCircle.value;
 // let triangleHeight = userInputTriangle.value
 // let rectangleHeight = userInputRectangleHeight.value
@@ -29,16 +36,15 @@ class Shape {
         })
         this.div.addEventListener('dblclick', () => {
             this.div.remove();
+            shapeName.textContent = "";
+            shapeWidth.textContent = "";
+            shapeHeight.textContent = "";
+            shapeRadius.textContent = "";
+            shapeArea.textContent = "";
+            shapePerimeter.textContent = "";
         })
     }
-    describe(){
-        let shapeName = document.querySelector('.shape-name');
-        let shapeWidth = document.querySelector('.shape-width');
-        let shapeHeight = document.querySelector('.shape-height');
-        let shapeRadius = document.querySelector('.shape-radius');
-        let shapeArea = document.querySelector('.shape-area');
-        let shapePerimeter = document.querySelector('.shape-perimeter');
-        
+    describe(){       
         shapeName.textContent = this.name;
         shapeWidth.textContent = this.width;
         shapeHeight.textContent = this.height;
@@ -113,6 +119,7 @@ circleBtn.addEventListener('click', () => {
     }
     let circle = new Circle(userInputCircle.value);
     shapeContainer.append(circle.div);
+    userInputCircle.value = ""
 })
 
 triangleBtn.addEventListener('click', () => {
@@ -123,6 +130,7 @@ triangleBtn.addEventListener('click', () => {
     }
     let triangle = new Triangle(userInputTriangle.value);
     shapeContainer.append(triangle.div);
+    userInputTriangle.value = "";
 })
 rectangleBtn.addEventListener('click', () => {
     if(userInputRectangleHeight.value > 600){
@@ -137,6 +145,8 @@ rectangleBtn.addEventListener('click', () => {
     }
     let rectangle = new Rectangle(userInputRectangleHeight.value, userInputRectangleWidth.value);
     shapeContainer.append(rectangle.div);
+    userInputRectangleHeight.value = "";
+    userInputRectangleWidth.value = "";
 })
 squareBtn.addEventListener('click', () => {
     if(userInputSquare.value > 600){
@@ -146,4 +156,5 @@ squareBtn.addEventListener('click', () => {
     }
     let square = new Square(userInputSquare.value);
     shapeContainer.append(square.div);
+    userInputSquare.value = "";
 })
