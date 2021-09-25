@@ -126,13 +126,13 @@ triangleBtn.addEventListener('click', () => {
 })
 rectangleBtn.addEventListener('click', () => {
     if(userInputRectangleHeight.value > 600){
-        alert('Please enter a value of 600px or less')
+        alert('Please enter a height value of 600px or less')
         userInputRectangleHeight.value = "";
         return;
     }
-    if (userInputRectangleWidth,value > 600){
-        alert('Please enter a value of 600px or less')
-        userInputRectangleHeight.value = "";
+    if (userInputRectangleWidth.value > 600){
+        alert('Please enter a width value of 600px or less')
+        userInputRectangleWidth.value = "";
         return;
     }
     let rectangle = new Rectangle(userInputRectangleHeight.value, userInputRectangleWidth.value);
