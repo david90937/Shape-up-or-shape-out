@@ -1,4 +1,5 @@
 .shape-container {
+    position: relative;
     height: 600px;
     width: 600px;
     background-color: teal;
@@ -20,7 +21,7 @@
   }
 
 .rectangle {
-    background: red;
+    background: green;
   }
 
 .circle {
@@ -28,10 +29,9 @@
     border-radius: 50%
   }
 
-.triangle-isosceles {
-    border-bottom: 100px solid red;
-    border-right: 100px solid transparent;
-  }
+/* .triangle-isosceles {
+    /* border-bottom: 100px solid red;
+    border-right: 100px solid transparent; */
 
 .panel-item{
     background-color: white;

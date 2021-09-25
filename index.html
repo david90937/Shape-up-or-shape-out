@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button class="btn btn-primary" id="rectangle-btn">Rectangle</button>
-    <input type="text" id="rectangle-height">
-    <input type="text" id="rectangle-width">
-    <button class="btn btn-primary" id="triangle-btn">Triangle</button>
-    <input type="text" id="triangle-height">
-    <button class="btn btn-primary" id="circle-btn">Circle</button>
-    <input type="text" id="circle-radius">
-    <button class="btn btn-primary" id="square-btn">Square</button>
-    <input type="text" id="square-side">
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-primary col-1" id="rectangle-btn">Rectangle</button>
+            <input type="text" class="col-3" placeholder="Height px" id="rectangle-height">
+            <input type="text" class="col-3" placeholder="Width px" id="rectangle-width">
+            <button class="btn btn-primary col-1" id="triangle-btn">Triangle</button>
+            <input type="text" class="col-4" placeholder="Height px" id="triangle-height">
+            <button class="btn btn-primary col-1" id="circle-btn">Circle</button>
+            <input type="text" class="col" placeholder="Radius px" id="circle-radius">
+            <button class="btn btn-primary col-1" id="square-btn">Square</button>
+            <input type="text" class="col" placeholder="Side length px" id="square-side">
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="shape-container col-6"></div>
